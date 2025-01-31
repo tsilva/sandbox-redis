@@ -24,4 +24,8 @@ EXPOSE 6379
 
 ENV SHELL=/bin/bash
 
-CMD ["redis-server", "/workspace/redis.conf"]
+COPY --chown=devuser:devuser entrypoint.sh /workspace/entrypoint.sh
+RUN chmod +x /workspace/entrypoint.sh
+
+ENTRYPOINT ["/workspace/entrypoint.sh"]
+CMD ["sleep", "infinity"]

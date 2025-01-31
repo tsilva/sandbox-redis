@@ -11,5 +11,6 @@
             ]
         }
     },
-    "remoteUser": "devuser"
+    "remoteUser": "devuser",
+    "overrideCommand": false
 }
