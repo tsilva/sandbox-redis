@@ -1,0 +1,2 @@
+- Install latest
+- Make sure it boots with container

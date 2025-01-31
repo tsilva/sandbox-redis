@@ -1,0 +1,15 @@
+{
+    "name": "sandbox-redis",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "cweijan.vscode-redis-client"
+            ]
+        }
+    },
+    "remoteUser": "devuser"
+}
