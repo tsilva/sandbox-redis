@@ -7,8 +7,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     ca-certificates \
     nano \
-    redis-server \
-    redis-tools \
+    software-properties-common \
+    && curl -fsSL https://packages.redis.io/gpg | gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg \
+    && echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/redis.list \
+    && apt-get update && apt-get install -y redis \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Miniconda
