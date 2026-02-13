@@ -1,7 +1,7 @@
 <div align="center">
   <img src="logo.png" alt="sandbox-redis" width="512"/>
 
-  **🗄️ FastAPI inventory management system using Redis as the data store**
+  **🗄️ FastAPI inventory management system using Redis as the data store 🚀**
 
 </div>
 
