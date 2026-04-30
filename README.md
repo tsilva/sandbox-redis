@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" alt="sandbox-redis" width="512"/>
+  <img src="https://raw.githubusercontent.com/tsilva/sandbox-redis/main/logo.png" alt="sandbox-redis" width="512"/>
 
   **🗄️ FastAPI inventory management system using Redis as the data store 🚀**
 
